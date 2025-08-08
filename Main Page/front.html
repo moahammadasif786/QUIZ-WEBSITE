@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="front.css">
+</head>
+<body>
+  
+     <style>
+      
+        body , html{
+        
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Optional: If you are using a <video> tag directly */
+video.video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* For mobile support */
+@media (max-width: 768px) {
+  .video-background {
+    object-fit: cover;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 30vh;
+  font-family: sans-serif;
+}
+
+
+     </style>
+   </head>
+   <body>
+   
+   
+     <video class="video-background" autoplay muted loop>
+       <source src="istockphoto-2172579874-640_adpp_is.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+     </video>
+   
+     <!-- Page Content -->
+    
+   
+   
+  
+   
+   <a href="/2nd page/index.html">
+      <button>START</button>
+   </a>
+
+
+<div id="splash" onclick="start()">&#127929; Click to start!</div>
+ 
+
+<audio id="bgm" src="ElevenLabs_2025-04-09T16_00_41_Mark - Natural Conversations_pvc_sp100_s50_sb75_se0_b_m2 (1).mp3" loop ></audio>
+ 
+
+
+
+
+</body>
+<script src="front.js"></script>
+</html>

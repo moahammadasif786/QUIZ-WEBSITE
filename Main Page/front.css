@@ -1,0 +1,85 @@
+/* Viewport meta tag for responsive scaling (add this in your HTML <head>) */
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
+img {
+    width: 100%;
+    max-width: 1535px;
+    height: 730px;
+    display: block;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 22px;
+    border: none;
+    box-shadow: rgb(10, 255, 43) 5px 5px 20px;
+    transition: 0.3s linear;
+    color: rgba(195, 13, 13, 0.824);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #a8dca8, #dbaaa7);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
+
+
+
+/* 🔧 Responsive Fixes for Mobile Devices */
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        top: 85%;
+        width: 90px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    #play {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+/* (PART A) SPLASH SCREEN */
+#splash {
+    /* (A1) FULLSCREEN */
+    position: fixed; top: 0; left: 0; z-index: 999;
+    width: 100vw; height: 100vh;
+   
+    /* (A2) CENTER */
+    display: flex;
+    align-items: center; justify-content: center;
+   
+    /* (A3) COSMETICS */
+    font-size: 24px;
+    color: #fff; background: #000;
+  }
+   
+  /* (A4) TO HIDE THE SPLASH SCREEN */
+  #splash.hide {
+    opacity: 0; visibility: hidden;
+    transition: all 1s;
+  }
