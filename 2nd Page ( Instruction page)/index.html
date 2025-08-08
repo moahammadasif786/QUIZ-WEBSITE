@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Language</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            background: url("https://t3.ftcdn.net/jpg/02/64/45/14/360_F_264451404_s4Dhf0mQZdg1N4Gx9RrwfnIIjBiZQ459.jpg") no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #444;
+        }
+
+        .container img {
+            display: none;
+        }
+
+        .main {
+            padding: 40px;
+            text-align: center;
+            color: #f1f1f1;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .main h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #FF6F61; 
+            animation: fadeIn 2s ease-out;
+            text-transform: capitalize; 
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        .select h2 {
+            color: #FF6F61;
+            font-size: 2rem;
+            margin-top: 20px;
+            animation: fadeIn 3s ease-out;
+            text-transform: capitalize; 
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ol {
+            text-align: left;
+            display: inline-block;
+            margin-top: 20px;
+            color: #000000;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            color: #160101;
+            text-transform: capitalize; /* Capitalize each word in list items */
+        }
+
+        .butt {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #6a5acd, #ff8c00);
+            color: white;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 10px;
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, #ff8c00, #6a5acd);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #ff8c00;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .notice-list {
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .notice-list li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            text-transform: capitalize; /* Capitalize each word in list items */
+        }
+
+        .notice-list ol {
+            margin-left: 20px;
+            font-size: 1rem;
+            list-style-type: decimal;
+        }
+
+        .container {
+            margin-bottom: 40px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main h2, .select h2 {
+                font-size: 1.7rem;
+            }
+
+            .butt {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            button {
+                width: 80%;
+                margin-bottom: 10px;
+            }
+
+            .notice-list {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Removed the programming banner -->
+    </div>
+
+    <div class="main">
+        <h2><i>Before starting the quiz, here are some important notices:</i></h2>
+        <div class="notice-list">
+            <ul>
+                <li>The quiz is available in the following languages:</li>
+                <ol>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Kotlin</li>
+                </ol>
+                <li>Each language contains 5 questions, each worth 1 mark.</li>
+                <li>Don't worry if you tick the wrong answers; you can easily reload the quiz to restart.</li>
+                <li>The quiz covers the top 4 programming languages that are growing in demand in the market.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="select">
+        <h2><i>Select a language to start the quiz</i></h2>
+    </div>
+
+    <div class="butt">
+        <a href="/java questions/java.html">
+            <button>Java</button>
+        </a>
+        <a href="/java script questions/script.html">
+            <button>JavaScript</button>
+        </a>
+        <a href="/kotlin questions/kotlin.html">
+            <button>Kotlin</button>
+        </a>
+        <a href="/python questions/pyt.html">
+            <button>Python</button>
+        </a>
+        <a href="/multiple language/hey.html">
+            <button>Multiple Languages</button>
+        </a>
+    </div>
+
+</body>
+
+</html>
